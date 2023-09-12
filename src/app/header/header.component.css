@@ -1,0 +1,64 @@
+.Caja {
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(220, 76, 76, 0.1);
+  border: 2px;
+  border-color: #eccbcb;
+  border-style: groove;
+  background-color: #343d46;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.caja1 {
+  color: #f8f5f5;
+  padding: 0px 10px 0px 15px;
+  font-size: 17px;
+  text-align: justify;
+}
+.nombre {
+  font-size: 27px;
+  font-weight: bold;
+  color: #f7f5f5;
+
+  margin: none;
+}
+
+.caja2 {
+  text-align: right;
+  padding: 20px 10px 0px 0px;
+}
+.caja3{
+  margin-top: 0px;
+  padding-right: 25px;
+  padding-left: 20px;
+  text-align: right;
+}
+
+.imagen {
+  border-radius: 50%; 
+  border: 4px solid #000000;
+}
+
+.sombra {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.barra {
+  margin-top: 20px;
+  height: 5px;
+  background-color: #d4c5c5; /* Color pastel */
+  width: 100%;
+}
+
+.ul{
+  list-style-type:none ;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  color: #f2f2f2;
+  font-size: 14px;
+  font-weight: 700;
+}
