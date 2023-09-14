@@ -1,0 +1,15 @@
+<div>
+    <section>
+        <h1 class="titulo">Interests</h1>
+    </section>  
+  
+    <table>
+        <ul class="Caja sombra" *ngFor="let inter of Interests">
+            <p class="puesto">{{inter.habiliad}}</p>
+            <p class="empresa">{{inter.habilidad1}}</p>
+            <ul *ngFor="let intere of inter.interes_nesesarias ">
+                <p>{{intere}}</p>
+            </ul>
+        </ul>
+    </table>
+  </div>
