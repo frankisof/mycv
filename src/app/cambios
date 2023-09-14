@@ -1,0 +1,10 @@
+1.- crear componente skills
+2.- crear services 
+3.- editar skills.component.ts
+4.- editar skills.service.ts
+5.- crear skills.json
+6.- editar skills.json con atributos identicos a skills.component.ts
+7.- editar skills.component.css
+8.- editar app.component.html
+9.- editar skills.component.html
+
