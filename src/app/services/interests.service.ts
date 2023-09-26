@@ -7,11 +7,11 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class WorkExperienceService {
+export class InterestsService {
 
-  constructor(public http: HttpClient ) { }
+  constructor(public http: HttpClient) { }
 
-  apiUrl = 'https://node-apicv-service-frankisof.cloud.okteto.net/workexperience';
+  apiUrl = 'https://node-apicv-service-frankisof.cloud.okteto.net/interests';
 
   httpOptions = {
     headers: new HttpHeaders ({
@@ -39,3 +39,10 @@ export class WorkExperienceService {
     return throwError(errorMessage);
   }
 }
+
+
+
+
+
+
+

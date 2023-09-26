@@ -1,0 +1,15 @@
+<div>
+    <section>
+        <h1 class="titulo">Certifications</h1>
+    </section>  
+  
+    <table>
+        <ul class="Caja sombra" *ngFor="let cer of Certifications">
+            <p class="puesto">{{cer.habiliad}}</p>
+            <p class="empresa">{{cer.habilidad1}}</p>
+            <ul *ngFor="let certif of cer.certificaciones_nesesarias ">
+                <p>{{certif}}</p>
+            </ul>
+        </ul>
+    </table>
+  </div>

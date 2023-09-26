@@ -1,0 +1,15 @@
+<div>
+    <section>
+        <h1 class="titulo">Skills</h1>
+    </section>  
+  
+    <table>
+        <ul class="Caja sombra" *ngFor="let hab of Habilidad">
+            <p class="puesto">{{hab.habiliad}}</p>
+            <p class="empresa">{{hab.habilidad1}}</p>
+            <ul *ngFor="let skil of hab.habilidades_nesesarias ">
+                <p>{{skil}}</p>
+            </ul>
+        </ul>
+    </table>
+  </div>

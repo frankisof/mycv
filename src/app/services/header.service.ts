@@ -11,7 +11,7 @@ export class HeaderService {
 
   constructor(private http: HttpClient ) { }
 
-  apiUrl = 'http://localhost:8080/header';
+  apiUrl = 'https://node-apicv-service-frankisof.cloud.okteto.net/header';
 
   httpOptions = {
     headers: new HttpHeaders ({

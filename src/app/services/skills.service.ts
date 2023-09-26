@@ -7,11 +7,11 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class WorkExperienceService {
+export class SkillsService {
 
   constructor(public http: HttpClient ) { }
 
-  apiUrl = 'https://node-apicv-service-frankisof.cloud.okteto.net/workexperience';
+  apiUrl = 'https://node-apicv-service-frankisof.cloud.okteto.net/skill';
 
   httpOptions = {
     headers: new HttpHeaders ({

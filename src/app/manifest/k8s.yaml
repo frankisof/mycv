@@ -1,0 +1,36 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-deployment
+spec:
+  selector:
+    matchLabels:
+      app: httpd-server
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: httpd-server
+    spec:
+      containers:
+      - name: httpd-container
+        #image: gcr.io/tensorflow-serving/resnet 
+        image: docker.io/frankisoft/mycv_angular:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: httpd-service
+  name: httpd-service
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: model_name-server
+  type: LoadBalancer
+
